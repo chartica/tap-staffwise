@@ -23,21 +23,21 @@ plugins:
     - name: api_key
       kind: string
       label: API Key
-      description: The API Key to use for authentication
+      description: API Key to authenticate requests and access the API
       sensitive: true
     - name: subdomain
       label: Subdomain
-      description: The subdomain to use for the request URL
+      description: Subdomain you would like to pull data from
     - name: reporting_id
       label: Reporting ID
-      description: The ID of the Report you want to pull data from
+      description: Reporting ID of each report
     - name: start_date
       label: Start Date
-      description: The start date for filtering results in the API call.
+      description: The start date for filtering results in the API call
       value: ''
     - name: stop_date
       label: End Date
-      description: The start date for filtering results in the API call.
+      description: The end date for filtering results in the API call
       value: ''
   loaders:
   - name: target-jsonl

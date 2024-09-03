@@ -19,7 +19,7 @@ class TapStaffwise(Tap):
             th.StringType,
             required=True,
             secret=True,  # Flag config as protected.
-            description="API Key",
+            description="API Key to authenticate requests and access the API",
         ),
         th.Property(
             "subdomain",
@@ -36,12 +36,12 @@ class TapStaffwise(Tap):
         th.Property(
             "start_date",
             th.StringType,
-            description="The start date for filtering results in the API call.",
+            description="The start date for filtering results in the API call",
         ),
         th.Property(
             "stop_date",
             th.StringType,
-            description="The end date for filtering results in the API call.",
+            description="The end date for filtering results in the API call",
         ),
     ).to_dict()
     
