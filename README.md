@@ -15,7 +15,7 @@ pipx install git+git@github.com:chartica/tap-staffwise.git
 ## Configuration
 
 ### Accepted Config Options
-In order to use this tap, you will need a Staffwise Endpoint URL (e.g. https://subdomain.staffed.it/reporting/api/get-data/{report-id}) and an API key to access the report data. Accepted config parameters are:
+In order to use this tap, you will need to have, or create, a Reporting API User in order to retrieve an API Key and ensure the report you want to pull is added to the Reporting API User before using its Reporting ID. Accepted config parameters are:
 
 - API Key: API Key to authenticate requests and access the API
 - Subdomain: Subdomain you would like to pull data from
