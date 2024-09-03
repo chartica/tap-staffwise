@@ -15,13 +15,13 @@ pipx install git+git@github.com:chartica/tap-staffwise.git
 ## Configuration
 
 ### Accepted Config Options
-In order to use this tap, you will need a TikTok for Business developer account and an app that's authenticated to access data from at least one business account. Accepted config parameters are:
+In order to use this tap, you will need a Staffwise Endpoint URL (e.g. https://subdomain.staffed.it/reporting/api/get-data/{report-id}). Accepted config parameters are:
 
 - API Key: API Key to authenticate requests and access the API
 - Subdomain: Subdomain you would like to pull data from
 - Reporting ID: Reporting ID of each report
-- Start Date: The start date for filtering results in the API call
-- Stop Date: The end date for filtering results in the API call
+- Start Date (optional): The start date for filtering results in the API call
+- Stop Date (optional): The end date for filtering results in the API call
 
 A full list of supported settings and capabilities for this
 tap is available by running:
